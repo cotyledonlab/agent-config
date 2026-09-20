@@ -1,6 +1,6 @@
 ---
 name: sprite-art
-description: AI skill for sprite-art
+description: Create editable pixel-art sprites, tiles, and sprite sheets with SVG or code. Use for programmatic game assets; use imagegen for AI-generated raster artwork.
 ---
 
 # Sprite Art Generation Skill

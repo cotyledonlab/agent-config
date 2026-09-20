@@ -1,6 +1,6 @@
 ---
 name: gamedev-ts
-description: AI skill for gamedev-ts
+description: Build TypeScript browser games with Canvas 2D, Vite, and Vitest. Use for game loops, entities, input, collision, and game rendering.
 ---
 
 # gamedev-ts

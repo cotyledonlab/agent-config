@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gmail Housekeeping"
+  short_description: "Organize mail and surface important follow-ups"
+  default_prompt: "Use $gmail-housekeeping to organize the mailboxes I specify."

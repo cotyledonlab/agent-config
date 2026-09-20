@@ -42,7 +42,7 @@ description: Use Playwriter (Chrome extension + MCP) to control an existing Chro
 ### Tool availability checklist
 
 - Ensure the MCP server is configured for the environment where Codex is running (for Codex CLI, this is typically `~/.codex/config.toml`).
-- If `execute` is missing, add the server config and restart the agent/session:
+- If `execute` is missing, inspect available tools and explain the missing dependency. Configure it only when the user has requested setup. Example configuration:
 
 ```json
 {
@@ -57,8 +57,8 @@ description: Use Playwriter (Chrome extension + MCP) to control an existing Chro
 
 ### Rules and determinism
 
-- Always ensure the MCP server is running via `npx -y playwriter@latest` before any `execute` calls.
-- Before first `execute`, prompt the user to navigate to the target tab and click the Playwriter extension icon (green = connected).
+- Use an existing connected server; do not start a duplicate server for each operation.
+- First check the existing connection with a read-only operation. Request an extension click only if the tool reports that the target tab is disconnected.
 - Never call `browser.close()` or `context.close()`; only close pages you created.
 - Do not call `page.bringToFront()` unless the user asks.
 - After navigation, prefer `await page.waitForLoadState('domcontentloaded')`.
@@ -72,14 +72,9 @@ description: Use Playwriter (Chrome extension + MCP) to control an existing Chro
 - If connect errors persist after user clicks the icon, wait a few seconds and retry the same `execute` call; if still failing, call the `reset` tool once.
 - Remote relay: use `--host` or `PLAYWRITER_HOST` and `--token` or `PLAYWRITER_TOKEN`.
 
-### Pre-flight prompt (use verbatim)
+### Setup when disconnected
 
-Before we run Playwriter, please:
-1) Pin the Playwriter extension (puzzle icon in Chrome).
-2) Navigate to the tab you want me to control.
-3) Click the Playwriter extension icon so it turns green.
-
-Reply "ready" when that’s done.
+If the connection probe reports no connected tab, explain that the user must open the target tab and click the Playwriter extension icon. Reuse a working connection without another readiness question. If the browser task is not specifically tied to Playwriter, prefer an already available browser-control tool instead of adding setup work.
 
 ### Background agent reporting template
 
@@ -96,7 +91,7 @@ Playwriter run summary:
 
 ### Connection handshake (recommended)
 
-- After the user replies "ready", run a short `execute` to confirm connectivity:
+- Run a short read-only `execute` to confirm connectivity:
 
 ```js
 return { url: page.url(), title: await page.title() };
