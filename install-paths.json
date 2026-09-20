@@ -1,0 +1,13 @@
+{
+  "skills/diagnosing-bugs": "/Users/johnmaher/.agents/skills/diagnosing-bugs",
+  "skills/tdd": "/Users/johnmaher/.agents/skills/tdd",
+  "skills/code-review": "/Users/johnmaher/.agents/skills/code-review",
+  "skills/research": "/Users/johnmaher/.agents/skills/research",
+  "skills/handoff": "/Users/johnmaher/.agents/skills/handoff",
+  "skills/grilling": "/Users/johnmaher/.agents/skills/grilling",
+  "skills/frontend-advanced": "/Users/johnmaher/.config/ai-skills/frontend-advanced",
+  "skills/gamedev-ts": "/Users/johnmaher/.config/ai-skills/gamedev-ts",
+  "skills/sprite-art": "/Users/johnmaher/.config/ai-skills/sprite-art",
+  "skills/playwriter": "/Users/johnmaher/.config/ai-skills/playwriter",
+  "global/AGENTS.md": "/Users/johnmaher/.codex/AGENTS.md"
+}
