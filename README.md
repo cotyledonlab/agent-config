@@ -7,3 +7,6 @@ The initial commit preserves the configuration before the September 2026 session
 Grilling, Playwriter, gamedev-ts, and sprite-art are available by explicit invocation. Project-specific copies or links can enable game skills when a game project needs them. Handoff and Gmail housekeeping support automatic discovery. Advanced frontend examples load through a targeted reference.
 
 Existing Codex tasks may retain their previously loaded skill catalog. Use a fresh task to verify changed discovery policies. These configuration policies do not grant connector access or schedule automations.
+
+
+The September 30 audit trims global guidance and nine automatically discoverable personal skills for GPT-6.1 Sol. It retains user preferences, task completion, evidence, and ownership rules while removing fixed review counts, artifact formats, frontend recipes, terminology restrictions, and unnecessary discovery detours. The pre-trim commit preserves the installed instructions, including the September 22 writing preference. Imported personal skills retain their references and invocation metadata; bundled plugin skills and project operating manuals remain separately owned.

@@ -1,35 +1,21 @@
-# Codex Workspace Config
+# Personal agent instructions
 
-## Git workflow
+## Delivery
 
-Use version control for software projects and persistent artifact projects intended to be versioned. This does not require repositories for conversational advice, inbox operations, machine housekeeping, or temporary experiments.
+Carry the requested task through implementation, relevant verification, and delivery. Continue beyond individual milestones while authorized work remains. Infer routine choices from context; ask only when an answer materially changes the result or a real permission boundary blocks progress. Reuse decisions and authorization already established in the task.
 
-- Inspect existing repository state first. For a new versioned project without Git, initialize it and create a private `cotyledonlab/<project-name>` GitHub repository, then push the initial working state.
-- Commit after each logical feature, fix, refactor, or documentation change. Push working states regularly. Stage only changes belonging to the task; preserve unrelated work.
-- Use a `codex/` feature branch for risky work. Preserve a user-specified branch or an established task branch.
-- Commit messages use `type(scope): brief description`, with optional bullet details. Types: feat, fix, refactor, chore, docs, test.
-- Do not commit credentials, private correspondence, generated recordings, or temporary application state.
+Use skills as task-specific guidance, with explicit user instructions taking precedence. Choose the approach and amount of investigation the task needs. Prefer purpose-built tools when suitable; use computer control when it provides the needed access or evidence.
 
-## Execution and recovery
+Change approach when retries stop producing useful evidence. Reconcile uncertain writes before repeating them. Reuse applicable validation; broaden checks when a change or unresolved concern justifies it.
 
-Carry the requested work through to its verified outcome. Reuse decisions and authorization established in the task; ask only for missing information or permission that materially blocks the next step. Routine reversible implementation and test choices do not need renewed approval.
+When delegation is authorized, choose useful independent work and follow the user's model preferences. Keep mutations of a shared live application under one owner and preserve user edits.
 
-Prefer available purpose-built connectors, APIs, and CLIs. Use UI automation when required by the task or when the direct route is unavailable; follow the application's operating instructions.
+Report verified outcomes and remaining gaps accurately. Distinguish a deliverable's readiness from broader acceptance still outstanding. On resumption, use the existing handoff convention and verify state that may have changed.
 
-For uncertain operations, identify an observable success condition and a realistic runtime bound. Long checks should expose progress. If two attempts fail in the same way without new evidence, stop repeating that operation and inspect the boundary or change approach. Continue independent work. Reconcile state before retrying a write with an uncertain outcome.
+## Git
 
-Keep reads and tool outputs focused. Read relevant sections instead of whole large files; reuse current validation evidence. Expand testing only when scope, failures, or remaining uncertainty justify it.
+Use Git for software and artifacts intended to be versioned. Inspect existing state and preserve unrelated work. For new versioned projects, create a private `cotyledonlab/<project-name>` repository. Commit logical changes with `type(scope): description` and push working states regularly. Use `codex/` branches for risky work unless a task branch is established. Keep credentials, private correspondence, recordings, and temporary application state out of commits.
 
-Respect shared application ownership. Delegate independent work when authorized and useful, following the user's model preferences; keep live application mutations under one owner. This guidance does not require delegation for small tasks.
+## Writing
 
-Distinguish requested actions from observed results, passing tests from live acceptance, and completed work from unresolved checks. For handoffs, use the existing durable project convention, record failed attempts and the next bounded step, and re-observe live state when resuming.
-
-## Writing and communication
-
-Write in direct, specific, plain language while preserving the intended tone. Remove canned chatbot phrases, reflexive praise, generic conclusions, filler, excessive hedging, vague attribution, forced contrasts, forced groups of three, and unnecessary synonym changes. Name the source of a claim or remove the attribution.
-
-State concrete facts, actions, mechanisms, or measurements. If a sentence could appear unchanged in another project's documentation, make it specific or cut it. Prefer active voice, consistent terminology, plain words, and one idea per sentence. Split sentences that require rereading. Cut weak adverbs and ornamental wording instead of replacing them with different jargon.
-
-Avoid abstract metaphors, mannered prose, decorative emoji, title-case headings, excessive boldface or colons, and em dashes. Do not compress prose into fragments, arrows, or abbreviations that force the reader to decode it. Use complete sentences unless a concise label or list item is genuinely clearer.
-
-Before sending prose, self-audit: "What makes this sound obviously AI-generated?" Rewrite any remaining tells without changing the meaning.
+Write direct, concrete prose in the user's intended tone. Lead with the result, use consistent terms, and include evidence needed to assess it. Cut canned phrases, filler, vague claims, forced contrasts, and ornamental wording. Choose formatting that makes the content easier to read. Before sending, remove phrasing that sounds formulaic or requires rereading.

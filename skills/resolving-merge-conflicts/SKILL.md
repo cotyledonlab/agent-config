@@ -1,14 +1,12 @@
 ---
 name: resolving-merge-conflicts
-description: "Use when you need to resolve an in-progress git merge/rebase conflict."
+description: Resolve conflicts in an in-progress Git merge or rebase.
 ---
 
-1. **See the current state** of the merge/rebase. Check git history, and the conflicting files.
+# Resolve merge conflicts
 
-2. **Find the primary sources** for each conflict. Understand deeply why each change was made, and what the original intent was. Read the commit messages, check the PRs, check original issues/tickets.
+Inspect repository state, conflicting changes, and their intent. Read commits, requirements, or PR context where needed to decide a resolution. Preserve both intended behaviors where compatible; ask when an unresolved conflict changes the requested outcome.
 
-3. **Resolve each hunk.** Preserve both intents where possible. Where incompatible, pick the one matching the merge's stated goal and note the trade-off. Do **not** invent new behaviour. Always resolve; never `--abort`.
+Stage only resolved files belonging to the operation, preserving unrelated changes. Run checks relevant to the merged behavior and continue the authorized merge or rebase. Verify its final state.
 
-4. Discover the project's **automated checks** and run them — typically typecheck, then tests, then format. Fix anything the merge broke.
-
-5. **Finish the merge/rebase.** Stage everything and commit. If rebasing, continue the rebase process until all commits are rebased.
+Aborting or restoring the prior state is a valid recovery when the operation is wrong, unsafe, or explicitly cancelled. Preserve recoverable work before recovery; do not force a resolution merely to finish.

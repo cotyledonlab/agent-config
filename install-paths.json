@@ -10,5 +10,11 @@
   "skills/sprite-art": "/Users/johnmaher/.config/ai-skills/sprite-art",
   "skills/playwriter": "/Users/johnmaher/.config/ai-skills/playwriter",
   "global/AGENTS.md": "/Users/johnmaher/.codex/AGENTS.md",
-  "skills/gmail-housekeeping": "/Users/johnmaher/.config/ai-skills/gmail-housekeeping"
+  "skills/gmail-housekeeping": "/Users/johnmaher/.config/ai-skills/gmail-housekeeping",
+  "skills/frontend-design": "/Users/johnmaher/.config/ai-skills/frontend-design",
+  "skills/prototype": "/Users/johnmaher/.agents/skills/prototype",
+  "skills/codebase-design": "/Users/johnmaher/.agents/skills/codebase-design",
+  "skills/domain-modeling": "/Users/johnmaher/.agents/skills/domain-modeling",
+  "skills/resolving-merge-conflicts": "/Users/johnmaher/.agents/skills/resolving-merge-conflicts",
+  "skills/find-skills": "/Users/johnmaher/.agents/skills/find-skills"
 }
