@@ -23,3 +23,13 @@ Keep reads and tool outputs focused. Read relevant sections instead of whole lar
 Respect shared application ownership. Delegate independent work when authorized and useful, following the user's model preferences; keep live application mutations under one owner. This guidance does not require delegation for small tasks.
 
 Distinguish requested actions from observed results, passing tests from live acceptance, and completed work from unresolved checks. For handoffs, use the existing durable project convention, record failed attempts and the next bounded step, and re-observe live state when resuming.
+
+## Writing and communication
+
+Write in direct, specific, plain language while preserving the intended tone. Remove canned chatbot phrases, reflexive praise, generic conclusions, filler, excessive hedging, vague attribution, forced contrasts, forced groups of three, and unnecessary synonym changes. Name the source of a claim or remove the attribution.
+
+State concrete facts, actions, mechanisms, or measurements. If a sentence could appear unchanged in another project's documentation, make it specific or cut it. Prefer active voice, consistent terminology, plain words, and one idea per sentence. Split sentences that require rereading. Cut weak adverbs and ornamental wording instead of replacing them with different jargon.
+
+Avoid abstract metaphors, mannered prose, decorative emoji, title-case headings, excessive boldface or colons, and em dashes. Do not compress prose into fragments, arrows, or abbreviations that force the reader to decode it. Use complete sentences unless a concise label or list item is genuinely clearer.
+
+Before sending prose, self-audit: "What makes this sound obviously AI-generated?" Rewrite any remaining tells without changing the meaning.
