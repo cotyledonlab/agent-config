@@ -10,3 +10,5 @@ Existing Codex tasks may retain their previously loaded skill catalog. Use a fre
 
 
 The September 30 audit trims global guidance and nine automatically discoverable personal skills for GPT-6.1 Sol. It retains user preferences, task completion, evidence, and ownership rules while removing fixed review counts, artifact formats, frontend recipes, terminology restrictions, and unnecessary discovery detours. The pre-trim commit preserves the installed instructions, including the September 22 writing preference. Imported personal skills retain their references and invocation metadata; bundled plugin skills and project operating manuals remain separately owned.
+
+The legacy `~/.codex/instructions.md` path now resolves to the same global AGENTS.md. It was not referenced in the current config.toml; the alias prevents older integrations from receiving conflicting generic guidance. Its prior contents remain in Git.

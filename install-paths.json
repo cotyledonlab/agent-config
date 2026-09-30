@@ -16,5 +16,6 @@
   "skills/codebase-design": "/Users/johnmaher/.agents/skills/codebase-design",
   "skills/domain-modeling": "/Users/johnmaher/.agents/skills/domain-modeling",
   "skills/resolving-merge-conflicts": "/Users/johnmaher/.agents/skills/resolving-merge-conflicts",
-  "skills/find-skills": "/Users/johnmaher/.agents/skills/find-skills"
+  "skills/find-skills": "/Users/johnmaher/.agents/skills/find-skills",
+  "global/instructions.md": "/Users/johnmaher/.codex/instructions.md"
 }
